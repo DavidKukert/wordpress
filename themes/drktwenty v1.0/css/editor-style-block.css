@@ -1,0 +1,170 @@
+/* ------------------------------------------- */
+
+/*	DRKtwenty Editor Styles — Block Editor
+/* ------------------------------------------- */
+
+.editor-styles-wrapper {
+	background: #fff;
+	color: #222;
+    line-height: 1.5;
+	-moz-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+
+.editor-styles-wrapper > * {
+	font-family: sans-serif;
+}
+
+@supports ( font-variation-settings: normal ) {
+
+	.editor-styles-wrapper > * {
+		font-family: sans-serif;
+	}
+
+}
+
+.block-editor-default-block-appender textarea.block-editor-default-block-appender__content {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.block-editor-block-list__empty-block-inserter .block-editor-inserter__toggle:not(:hover):not(:focus),
+.block-editor-default-block-appender .block-editor-inserter .block-editor-inserter__toggle:not(:hover):not(:focus) {
+	color: inherit;
+}
+
+/* blocos */
+.wp-block {
+    max-width: 858px;
+    width: 100%;
+}
+
+.wp-block[data-align="wide"] {
+    width: calc(100% + 30px);
+}
+
+/* imagens */
+.wp-block-image {
+    border: 2px solid #222;
+    display: block;
+}
+
+.wp-block-image img {
+    display: block;
+}
+
+.wp-block-image figcaption {
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Align */
+.aligncenter {
+    margin: 0 auto;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.alignwide {
+    margin-left: -15px;
+    margin-right: -15px;
+    max-width: calc( 100% + 30px ) !important;
+    width: calc( 100% + 30px );
+}
+
+.alignwide:last-child {
+    margin-bottom: -15px !important;
+}
+
+/* Paragrafos */
+p.has-background {
+    margin: -15px;
+    margin-bottom: 0;
+    padding: 15px;
+}
+
+p.has-background:last-child {
+    margin-bottom: -15px !important;
+}
+
+/* Titulos */
+p.has-background + h1,
+p.has-background + h2,
+p.has-background + h3,
+p.has-background + h4,
+p.has-background + h5,
+p.has-background + h6 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* Citações */
+.wp-block-quote {
+    border-left: 5px solid #222;
+    box-shadow: 1px 1px 3px #222;
+    color: #222;
+    display: block;
+    font-size: 0.85em;
+    font-style: italic;
+    padding: 15px;
+}
+
+.wp-block-quote cite {
+    display: block;
+    text-align: right;
+}
+
+.wp-block-pullquote {
+    color: #222;
+    font-size: 0.95em;
+    font-style: italic;
+    padding: 15px;
+}
+
+.wp-block-pullquote blockquote,
+.wp-block-pullquote blockquote p {
+    font-size: inherit !important;
+    font-style: inherit !important;
+}
+
+/* Audios e videos */
+.wp-block-audio audio {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos Estruturais comuns */
+.wp-block-audio,
+.wp-block-video,
+.wp-block-quote,
+.wp-block-gallery,
+.wp-block-group,
+.wp-block-file,
+.wp-block-pullquote,
+.wp-block-table,
+.wp-block-verse {
+    margin-bottom: 15px;
+}
+
+.wp-block-audio:last-child,
+.wp-block-video:last-child,
+.wp-block-quote:last-child,
+.wp-block-gallery:last-child,
+.wp-block-group:last-child,
+.wp-block-file:last-child,
+.wp-block-pullquote:last-child,
+.wp-block-table:last-child,
+.wp-block-verse:last-child {
+    margin-bottom: 0 !important;
+}
